@@ -12,4 +12,8 @@ class CashRegister
     @items.push(title)
   end
   
+  def items
+    @items
+  end
+  
 end
