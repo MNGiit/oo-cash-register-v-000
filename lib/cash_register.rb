@@ -21,7 +21,7 @@ class CashRegister
   def apply_discount
     @total = @total - (@total*@discount/100)
     discount_message = "There is no discount to apply." if @discount == 0
-    discount_message = ""
+    discount_message = "After the discount, the total comes to $#{@total}." if @discount > 0
   end
   
   def void_last_transaction
