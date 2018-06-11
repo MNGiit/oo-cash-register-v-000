@@ -23,7 +23,7 @@ class CashRegister
     if @discount == 0
       "There is no discount to apply."
     else
-      discount_message = "After the discount, the total comes to $#{total}."
+      "After the discount, the total comes to $#{total}."
     end
     #discount_message = "There is no discount to apply." if @discount == 0
     #discount_message = "After the discount, the total comes to $#{@total}." if @discount > 0
