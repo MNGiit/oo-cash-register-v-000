@@ -18,6 +18,10 @@ class CashRegister
     @last_quantity = quantity
   end
   
+  def apply_discount
+    
+  end
+  
   def void_last_transaction
     @total-= @last_price*@last_quantity
     @last_quantity.times do
