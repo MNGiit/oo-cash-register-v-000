@@ -1,5 +1,5 @@
 class CashRegister
-  attr_accessor :total, :employee_discount, :items, :last_title, :last_price, :last_quantity
+  attr_accessor :total, :employee_discount, :items, :last_price, :last_quantity #,:last_title
   
   def initialize(employee_discount=20)
     @total = 0
@@ -13,7 +13,7 @@ class CashRegister
       @items.push(title)
     end
     #Assign these values for the function called void_last_transaction
-    @last_title = title
+    #@last_title = title #this one isn't really needed
     @last_price = price
     @last_quantity = quantity
   end
@@ -24,5 +24,4 @@ class CashRegister
       @items.pop
     end
   end
-  
 end
