@@ -1,9 +1,9 @@
 class CashRegister
   attr_accessor :total, :employee_discount, :items, :last_price, :last_quantity #,:last_title
   
-  def initialize(employee_discount=20)
+  def initialize(employee_discount=0)
     @total = 0
-    @employee_discount = employee_discount if employee_discount == 20
+    @employee_discount = employee_discount
     @items = []
   end
   
