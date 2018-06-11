@@ -19,7 +19,8 @@ class CashRegister
   end
   
   def apply_discount
-    @total-(@total*(@employee_discount/100))
+    @total-(@total*(@employee_discount/100)) if @employee_discount == 20
+    puts "Error there is no discount to apply" if @employee_discount == 0
   end
   
   def void_last_transaction
